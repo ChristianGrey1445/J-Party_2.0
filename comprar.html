@@ -1,0 +1,171 @@
+﻿<!DOCTYPE html>
+<html lang="es">   
+<head>    
+	<meta charset="iso-8859-1">   
+	<meta name="author" content="Cristian Martínez Colín">
+	<meta name="description" content="index.html">
+	<meta name="keyword" content="Ropa, diseños personalizados, anime, series, peliculas">
+	<title>Clothes</title>
+	<link rel="shortcut icon" type="image/png" href="../imagenes/polo.png"/>
+	<link rel="stylesheet" href="../style/estilos principal.css" />
+	<script>
+		function abrir() {
+			window.open("comprar.html")
+		}
+	</script>
+</head>
+<body>
+	<div id="cuerpo">
+		<header class="cabecera">
+			<ul>
+				<li><img id="imagen" src="../imagenes/polo.png" alt="Clothes" width="100" height="100"/></li>
+			    <li><p>Clothes</p></li>
+			</ul>
+		</header>
+
+
+
+
+		<aside id="contenido">
+			<?php
+				if(isset($_POST["enviando"])){
+					$usuario=$_POST["nombre_usuario"];
+					$password=$_POST["password_usuario"];
+
+					if($usuario=="Cris" && $password=="1234"){
+						echo "<img id='imagen' src='../imagenes/perfil.png' align='left' alt='Perfil' width='50' height='50'/>";
+						echo "Cristian Martínez";
+					} else {
+						echo "No puedes entrar";
+					}
+				}
+			?>
+			<nav>
+				<iframe height="315px" width="100%" src="contacto.html" name="damas"></iframe> 
+				<ul>
+					<hr>
+					<li>Perfil</li>
+					<hr>
+					<li>Amigos</li>
+					<hr>
+					<li>Eventos</li>
+					<hr>
+					<li>Fotos</li>
+					<hr>
+					<li>Calendario</li>
+					<hr>
+					<li>Mapa</li>
+					<hr>
+					<li>Ajustes</li>
+					<hr>
+				</ul>
+				
+				
+			</nav>
+		</aside>
+		<section class="catalogo">
+			
+<div id="header">
+			<nav> 
+				<ul class="nav">
+					<li><a href="">Inicio</a>
+						<ul>
+							<li><a href="preguntas.html">Acerca de nosotros</a></li>	
+							<li><a href="preguntas.html">Preguntas frecuentes</a></li>
+							<li><a href="">Redes sociales</a>
+								<ul>
+									<li><a href="https://www.facebook.com/Clotheshtml9822-308286016338880/?modal=admin_todo_tour/" title="facebook " target="_blank">facebook</a></li>
+									<li><a href="https://www.youtube.com/channel/UCCP_VmKwdxDm7meCF_dhkGw" title="youtube" target="_blank">youtube</a></li>
+									<li><a href="https://www.instagram.com/clothes.html9822/" title="instagram" target="_blank">instagram</a></li>
+									<li></a></li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+					<li><a href="">Dama</a>
+						<ul>
+							<li><a href="vestidos.html" title="vestidos" target="_blank">vestidos</a></a></li>
+							<li><a href="damas.html" title="playeras" target="_blank">playeras </a></a></li>
+							<li><a href="">Accesorios</a>
+								<ul>
+									<li><a href="bolsos.html" title="bolsos" target="_blank">bolsos</a></a></li>
+									<li><a href="joyas.html" title="joyerias" target="_blank">joyeria</a></a></li>
+									<li><a href="temporada.html" title="temporada" target="_blank">temporada</a></a></li>
+									<li><a href="zapato.html" title="zapatos" target="_blank">zapatos </a></a></li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+					<li><a href="">Caballero</a>	
+						<ul>
+							<li><a href="caballeros.html" title="playeras" target="_blank">playeras </a></li>
+							<li><a href="camisas.html" title="camisas" target="_blank">camisas</a></li>
+							<li><a href="gorros.html" title="gorros" target="_blank">gorros</a></li>
+							<li><a href="sudaderas.html" title="sudaderas" target="_blank">sudaderas</a></li>
+						</ul></li>
+					<li><a href="">Junior</a>
+						<ul>
+							<li><a href=""><a href="junior.html" title="junior" target="_blank">Playeras</a></li>
+							<li><a href="chamarras de niños.html" title="chamarras" target="_blank">chamarras</a>></li>
+							<li><a href="sudaderas junio.html" title="sudaderas junior" target="_blank">sudaderas</a></li>
+						</ul></li>
+					<li><a href="">Personalizada</a> 
+						<ul>
+						<li><a href="index.html#peliculas">Peliculas</a></li>
+						<li><a href="index.html#anime">Anime</a></li>
+						<li><a href="index.html#caricaturas">Caricaturas</a></li>
+						<li><a href="index.html#comics">Comics</a></li>
+					</ul></li>
+					<li><input type="text" name="buscar" value="Buscador" /></li>  
+					<li><input type="button" value="Buscar"></li>
+				</ul>
+			</nav><!-- Aqui estamos cerrando la nueva etiqueta nav -->
+		</div>
+			<nav>
+				<br /><br /><br /><br />
+				<h1>Formas de pago</h1><br /><br /><br />
+				<ul>
+					
+					<li><ul>
+						<li><img src="../imagenes/zzz1.jpg" alt="comprar" width="200px"></li>
+						<li><h1><strong>Paypal</strong><h1><br />
+						<li><input type="button" value="Comprar" onClick="abrir()" /></li>
+					</ul></li>
+					<hr /><br /><br /><br />
+					<ul>
+					<li><ul>
+						<li><img src="../imagenes/zzz2.png" alt="comprar" width="200px"></li>
+						<li><h1><strong>VISA</strong><h1><br />
+						<li><input type="button" value="Comprar" onClick="abrir()" /></li>
+					</ul></li>
+					<hr /><br /><br /><br />
+					<ul>
+					<li><ul>
+						<li><img src="../imagenes/zzz3.png" alt="comprar" width="200px"></li>
+						<li><h1><strong>MasterCard</strong><h1><br />
+						<li><input type="button" value="Comprar" onClick="abrir()" /></li>
+					</ul></li>
+					<hr /><br /><br /><br />
+					<ul>
+					<li><ul>
+						<li><img src="../imagenes/zzz4.jpg" alt="comprar" width="200px"></li>
+						<li><h1><strong>Bitcoins</strong><h1><br />
+						<li><input type="button" value="Comprar" onClick="abrir()" /></li>
+					</ul></li>
+					<hr /><br /><br /><br />
+					<ul>
+					<li><ul>
+						<li><img src="../imagenes/zzz5.png" alt="comprar" width="200px"></li>
+						<li><h1><strong>Western Unior</strong><h1><br />
+						<li><input type="button" value="Comprar" onClick="abrir()" /></li>
+					</ul></li>
+					<hr />
+				</ul>
+			</nav>
+		</section>
+		<footer>
+			<small>Clothes SA de CV. Derechos reservados (2017)</small>
+		</footer>
+	</div>
+</body>
+</html>
